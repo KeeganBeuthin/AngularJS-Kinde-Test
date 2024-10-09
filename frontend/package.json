@@ -1,0 +1,26 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "AngularJS Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./app -p 3000",
+    "presetup": "npm install",
+    "setup": "npm run setup:dir && npm run setup:angular && npm run setup:bootstrap && npm run setup:jquery",
+    "setup:dir": "mkdir -p app/lib",
+    "setup:angular": "cp -R node_modules/angular* app/lib/",
+    "setup:bootstrap": "cp -R node_modules/bootstrap/dist app/lib/bootstrap",
+    "setup:jquery": "cp -R node_modules/jquery app/lib/"
+  },
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-animate": "^1.8.3",
+    "angular-cookies": "^1.8.3",
+    "angular-route": "^1.8.2",
+    "bootstrap": "^3.4.1",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

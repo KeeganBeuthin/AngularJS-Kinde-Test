@@ -1,0 +1,18 @@
+body {
+    padding-top: 0;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
